@@ -4,3 +4,13 @@
 *.iml
 *.ipr
 out/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.pdf
+*.out
+*.run.xml
+*.bcf
+*.blg

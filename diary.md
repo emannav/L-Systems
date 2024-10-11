@@ -12,7 +12,10 @@ as next sources to explore.<br>
 Meeting with supervisor, discussed expectations for the project plan and questions about final project deliverables.
 
 ### Entry 03 - Oct 7<sup>th</sup>
-First draft of project plan underway, expected completion by Tuesday afternoon for supervisor review.
+First draft of project plan underway, expected completion by Tuesday afternoon for supervisor review.<br>
+
+### Entry 04 - Oct 9<sup>th<\sup>
+First draft completed, submitted, and reviewed. Begun edits.<br>
 
 <br><br>
 #### General refs 
