@@ -15,11 +15,16 @@ Meeting with supervisor, discussed expectations for the project plan and questio
 First draft of project plan underway, expected completion by Tuesday afternoon for supervisor review.<br>
 
 ### Entry 04 - Oct 9<sup>th<\sup>
-First draft completed, submitted, and reviewed. Begun edits.<br>
+First draft completed and reviewed by supervisor. Begun edits.<br>
+
+### Entry 05 - Oct 11<sup>th<\sup>
+Final draft of project plan completed and submitted. Java Swing and Processing noted as potential libraries for GUI; 
+further research required. Had issues adding latex files to project repo, will attempt again later.
 
 <br><br>
 #### General refs 
 [Stochastic L-system inference from multiple string sequence inputs](https://www.semanticscholar.org/paper/Stochastic-L-system-inference-from-multiple-string-Bernard-McQuillan/e92bf6640b1cdfc3155622274274bca4dc7593ec)<br>
 [L-system models for image-based phenomics: case studies of maize and canola
-](https://www.semanticscholar.org/paper/L-system-models-for-image-based-phenomics%3A-case-of-Cieslak-Khan/9c3a7ca6590928c8ec25f8246c1828d5311fa6f8) -
-specific plant mimics<br>
+](https://www.semanticscholar.org/paper/L-system-models-for-image-based-phenomics%3A-case-of-Cieslak-Khan/9c3a7ca6590928c8ec25f8246c1828d5311fa6f8) - specific plant mimics<br>
+[Interactive Evolution of L-System Grammars for Computer Graphics Modelling](https://users.monash.edu/~jonmc/research/Papers/L-systems-evol.pdf)<br>
+[Alvy Ray Smith Computer Graphics Papers](http://alvyray.com/Papers/PapersCG.htm) 
