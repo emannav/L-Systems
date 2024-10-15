@@ -9,7 +9,6 @@ out/
 *.fls
 *.log
 *.synctex.gz
-*.pdf
 *.out
 *.run.xml
 *.bcf
