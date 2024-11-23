@@ -17,3 +17,7 @@ out/
 
 ### Processing ###
 .DS_Store
+applet
+application.windows32
+application.windows64
+out
