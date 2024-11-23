@@ -4,3 +4,16 @@
 *.iml
 *.ipr
 out/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.out
+.pdf
+*.run.xml
+*.bcf
+*.blg
+
+### Processing ###
+.DS_Store
