@@ -1,5 +1,16 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 09 - Nov 27<sup>th</sup>
+I had some issues importing Processing as a library but managed a functional setup page extending PApplet. I've made a 
+Turtle class to determine the initial default functionality of the turtle object. This will be the pen that determines 
+sketch with the use of specific parameters. Some trial and error will be required to accurately implement fractal graphics.<br>
+I am considering adding a coded demonstration of the String multiplication but am unsure if it would be useful. I will 
+have an example like this in my report regardless.
+
+### Entry 08 - Nov 23<sup>rd</sup>
+Begun implementation of code. I've decided to use the processing library, so I can implement Turtle graphics as this is 
+the most researched and easy to understand method in building functional L-systems.
+
 ### Entry 07 - Oct 26<sup>th</sup>
 I have added the LaTeX files for the project plan to the repo and have begun drafting the report.
 
@@ -7,7 +18,7 @@ I have added the LaTeX files for the project plan to the repo and have begun dra
 I have been unable to upload the LaTeX file for my project plan onto IntelliJ. For now the pdf version is up and I will
 try again with LaTeX, but I am having issues with TeXiFy-IDEA despite having the necessary plugins. I will remove the
 pdf from the repo once the LaTeX issue is sorted as I edit those documents via Overleaf.<br>
-I have been reading *The Algorithmic Beauty of Plants* and the above mentioned *Lindenmayer Systems, Fractals, and Plants*
+I have been reading *The Algorithmic Beauty of Plants* and the above-mentioned *Lindenmayer Systems, Fractals, and Plants*
 to get some reference on how to best show the working of the rewriting system.
 
 ### Entry 05 - Oct 11<sup>th</sup>
