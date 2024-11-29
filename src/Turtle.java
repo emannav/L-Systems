@@ -1,20 +1,18 @@
 public class Turtle {
-    String todo;
     float length;
     float theta;
-    void Turtle(String s, float l, float t){
-        todo = s;
+    Turtle(float l, float t){
         length = l;
         theta = t;
     }
 
-    void render(){
+    void render(String sentence){
         Sketch.processing.stroke(0, 175);
-        for(int i = 0; i < todo.length(); i++){
-            char c = todo.charAt(i);
+        for(int i = 0; i < sentence.length(); i++){
+            char c = sentence.charAt(i);
             switch (c){
                 case 'F':
-                    Sketch.processing.strokeWeight(2);
+                    Sketch.processing.strokeWeight(4);
                     Sketch.processing.line(0, 0, length, 0);
                     Sketch.processing.translate(length, 0);
                     break;
