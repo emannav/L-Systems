@@ -15,17 +15,47 @@ public class LSystem {
         StringBuilder nextgen = new StringBuilder();
         char c;
         int index;
-        for(int i = 0; i < this.sentence.length(); i++){
-            c = this.sentence.charAt(i);
-            if(this.ruleset.contains(c)){
-                index = this.ruleset.indexOf(c);
-                nextgen.append(this.ruleset.get(index).getB());
+        for(int i = 0; i < sentence.length(); i++){
+            c = sentence.charAt(i);
+            if(contains(c)){
+
+                nextgen.append(Generator(c));
             }
             else{
                 nextgen.append(c);
             }
         }
-        this.sentence = nextgen.toString();
+        sentence = nextgen.toString();
     }
 
+//    public void setSentence(String newS){
+//        this.sentence = newS;
+//    }
+    public String getSentence(){
+        return this.sentence;
+    }
+
+    public Boolean contains(char c){
+        char comp;
+
+        for (Rule rule : ruleset){
+            comp = rule.getA();
+            if (c == comp){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public String Generator(char c){
+        char comp;
+
+        for (Rule rule : ruleset){
+            comp = rule.getA();
+            if (c == comp){
+                return rule.getB();
+            }
+        }
+        return null;
+    }
 }
