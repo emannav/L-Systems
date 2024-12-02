@@ -12,7 +12,7 @@ public class Turtle {
             char c = sentence.charAt(i);
             switch (c){
                 case 'F':
-                    Sketch.processing.strokeWeight(4);
+                    Sketch.processing.strokeWeight(2);
                     Sketch.processing.line(0, 0, length, 0);
                     Sketch.processing.translate(length, 0);
                     break;
@@ -34,5 +34,8 @@ public class Turtle {
 
 
         }
+    }
+    public void setLength(int len){
+
     }
 }
