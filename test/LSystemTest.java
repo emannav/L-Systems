@@ -14,19 +14,33 @@ class LSystemTest {
     @BeforeEach
     void setup(){
         rule = new Rule('F', "FGF");
-        rules= new ArrayList<Rule>();
+        rules= new ArrayList<>();
         rules.add(rule);
-        lsystem = new LSystem("FF", rules);
     }
 
     @Test
-    void testGetter(){
+    void testGetter() {
+        lsystem = new LSystem("FF", rules);
         assertEquals("FF", lsystem.getSentence());
     }
 
     @Test
-    void setGenerate() {
+    void testGenerate() {
+        lsystem = new LSystem("FF", rules);
         lsystem.generate();
         assertEquals("FGFFGF", lsystem.getSentence());
+    }
+
+    @Test
+    void testInvalid() {
+        lsystem = new LSystem("FAF", rules);
+        assertEquals("FF", lsystem.getSentence());
+    }
+
+    @Test
+    void testInvalidGenerate(){
+        lsystem = new LSystem("FASFG", rules);
+        lsystem.generate();
+        assertEquals("FGFFGFG", lsystem.getSentence());
     }
 }

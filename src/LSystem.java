@@ -7,7 +7,7 @@ public class LSystem {
     int generation;
 
     LSystem(String axiom, List<Rule> rules){
-        this.sentence = axiom;
+        this.sentence = valid(axiom);
         this.ruleset = rules ;
     }
 
@@ -28,9 +28,17 @@ public class LSystem {
         sentence = nextgen.toString();
     }
 
-//    public void setSentence(String newS){
-//        this.sentence = newS;
-//    }
+    public String valid(String begin){
+        char comp;
+        StringBuilder finalStr = new StringBuilder();
+        for(int i = 0; i < begin.length(); i++){
+            comp = begin.charAt(i);
+            if(comp == 'F' || comp == 'G' || comp == '+' || comp == '-' || comp == '[' || comp == ']'){
+                finalStr.append(comp);
+            }
+        }
+        return finalStr.toString();
+    }
     public String getSentence(){
         return this.sentence;
     }
