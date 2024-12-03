@@ -1,5 +1,25 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 12 - Dec 3<sup>rd</sup>
+I have functional graphics for Koch Curve, Koch Snowflake, and Sierpinski Triangle. There was some issue in developing since
+Processing seems to not have any sort of delay that would allow one graphic to remain on the window for a set time before 
+I can clear the screen and present the next one. Currently, compromised to have several iterations of each fractal so the 
+progress of generations can be seen clearly with fractals of different complexities.<br>
+I might consider shifting from Processing to JavaFX since that seems to be a more reasonable avenue now that I have a better 
+understanding of both and what exact functionalities they provide me with. Simpler fractals are easy to portray via 
+the PApplet class, but as I progress, I would prefer to have better control of the output window.
+
+### Entry 11 - Dec 1<sup>st</sup>
+I was right about where exactly the error was stemming from. Did a bit of testing to make sure the issue was sorted and 
+added a validation method to make sure the input string doesn't have any undefined characters. <br>
+If undefined characters did make it through via the rules somehow, it should still be fine since the switch case in 
+Turtle simply moves on as the default. This may come in handy if I end up taking user input later in term 2.
+
+### Entry 10 - Nov 29<sup>th</sup>
+Attempted first LSystem implementation, not yet functional. I think there's some issue with the way the strings are being 
+generated. I might need to change how I'm storing the rules. List might be better since there's separate components of the 
+Rule objects that I need to access constantly. Maybe iterating by index might help. List.get() would be convenient for it.
+
 ### Entry 09 - Nov 27<sup>th</sup>
 I had some issues importing Processing as a library but managed a functional setup page extending PApplet. I've made a 
 Turtle class to determine the initial default functionality of the turtle object. This will be the pen that determines 
