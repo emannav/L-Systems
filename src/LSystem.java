@@ -25,7 +25,7 @@ public class LSystem {
                 nextgen.append(c);
             }
         }
-        sentence = nextgen.toString();
+        this.sentence = nextgen.toString();
     }
 
     public String valid(String begin){
@@ -39,6 +39,7 @@ public class LSystem {
         }
         return finalStr.toString();
     }
+
     public String getSentence(){
         return this.sentence;
     }

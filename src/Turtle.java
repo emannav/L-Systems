@@ -11,12 +11,9 @@ public class Turtle {
         for(int i = 0; i < sentence.length(); i++){
             char c = sentence.charAt(i);
             switch (c){
-                case 'F':
+                case 'F', 'G':
                     Sketch.processing.strokeWeight(2);
                     Sketch.processing.line(0, 0, length, 0);
-                    Sketch.processing.translate(length, 0);
-                    break;
-                case 'G':
                     Sketch.processing.translate(length, 0);
                     break;
                 case '+':
@@ -34,8 +31,5 @@ public class Turtle {
 
 
         }
-    }
-    public void setLength(int len){
-
     }
 }
