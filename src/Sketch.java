@@ -12,6 +12,8 @@ public class Sketch extends PApplet {
     LSystem kochSnowflake;
     Turtle turtleST;
     LSystem serpTriangle;
+    Turtle turtleSL;
+    LSystem stochasticImpl;
 
     public void settings(){
         size(1500, 800);
@@ -39,6 +41,12 @@ public class Sketch extends PApplet {
         ruleLC = new Rule('G', "F+G+F");
         rulesLC.add(ruleLC);
         serpTriangle = new LSystem("F+G+F-G-F-G-F+G+F", rulesLC);
+
+        this.turtleSL = new Turtle(6, radians(25));
+        List<Rule> rulesSL = new ArrayList<>();
+        Rule ruleSL = new Rule('F', "FF+[+F-F-F]-[-F+F+F]");
+        rulesSL.add(ruleSL);
+        stochasticImpl = new LSystem("F", rulesSL);
     }
 
     public void draw() {
@@ -49,7 +57,7 @@ public class Sketch extends PApplet {
             translate(5, 0);
         }
 
-        translate(-450, 300);
+        translate(-500, 300);
 
         for(int i = 0; i < 3; i++) {
             turtleKS.render(kochSnowflake());
@@ -58,11 +66,21 @@ public class Sketch extends PApplet {
         translate(-20, 90);
         turtleKS.render(kochSnowflake());
 
-        translate(-100,800);
+        translate(-50,650);
         for(int i = 0; i < 4; i++) {
             translate(0, -70);
             turtleST.render(serpTriangle());
         }
+
+        rotate(-90);
+        translate(150, -200);
+        for(int i = 0; i < 3; i++){
+            turtleSL.render(stochasticImpl());
+            translate(-60, 90);
+        }
+        translate(-70, 70);
+        turtleSL.render(stochasticImpl());
+
         noLoop();
     }
 
@@ -83,5 +101,10 @@ public class Sketch extends PApplet {
     public String serpTriangle(){
         serpTriangle.generate();
         return serpTriangle.getSentence();
+    }
+
+    public String stochasticImpl(){
+        stochasticImpl.generate();
+        return stochasticImpl.getSentence();
     }
 }
