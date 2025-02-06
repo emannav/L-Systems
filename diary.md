@@ -1,5 +1,12 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 13 - Feb 4<sup>th</sup>
+I couldn't carry out research over the winter break, but have been going through resources for G4P (GUI for Processing) 
+to see if it will allow me to implement the functionalities I am aiming for. The resources are, however, quite limited 
+and most of them are from 2014 and prior. As I am also using Processing as a library and not within its own IDE, I will 
+have to adapt whatever implementation I find to fit into the Java programs I am using. JavaFX is still my backup, though 
+beginning on that will also require a period of research.
+
 ### Entry 12 - Dec 3<sup>rd</sup>
 I have functional graphics for Koch Curve, Koch Snowflake, and Sierpinski Triangle. There was some issue in developing since
 Processing seems to not have any sort of delay that would allow one graphic to remain on the window for a set time before 
