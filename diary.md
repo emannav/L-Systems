@@ -1,5 +1,15 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 14 - Feb 28th<sup>th</sup>
+I've not had a very productive month in the context of this project. I'm going to begin shifting to JavaFX from now. I 
+plan to work on some base stochastic implementation before that, so I at least have something to show with the Processing 
+sketches still. The issue with continuing with Processing now is that G4P and its corresponding GUI Builder were created 
+with the Processing IDE and its specific language (similar to Java but ultimately different) in mind. The resources available 
+for it are extremely limited, and all discussion and community forums have the latest posts from 2014 or one or two from 2022. 
+I started with Processing because the sketch mechanism with its pen functionalities are perfect for adapting turtle objects 
+that achieve the desired graphics. I've been researching JavaFX, but didn't have the chance to add that progress to the 
+diary. I hope to begin soon with implementation as soon as further stochastic implementation has proved successful.
+
 ### Entry 13 - Feb 4<sup>th</sup>
 I couldn't carry out research over the winter break, but have been going through resources for G4P (GUI for Processing) 
 to see if it will allow me to implement the functionalities I am aiming for. The resources are, however, quite limited 
