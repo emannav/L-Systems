@@ -52,36 +52,41 @@ public class Sketch extends PApplet {
     public void draw() {
         background(255);
         translate(0,5);
-        for(int i = 0; i < 4; i++) {
-            turtleKC.render(kochCurve());
-            translate(5, 0);
-        }
-
-        translate(-500, 300);
-
-        for(int i = 0; i < 3; i++) {
-            turtleKS.render(kochSnowflake());
-            translate(80, 0);
-        }
-        translate(-20, 90);
-        turtleKS.render(kochSnowflake());
-
-        translate(-50,650);
-        for(int i = 0; i < 4; i++) {
-            translate(0, -70);
-            turtleST.render(serpTriangle());
-        }
-
-        rotate(-90);
-        translate(150, -200);
-        for(int i = 0; i < 3; i++){
-            turtleSL.render(stochasticImpl());
-            translate(-60, 90);
-        }
-        translate(-70, 70);
-        turtleSL.render(stochasticImpl());
+        turtleKC.render(kochCurve());
+//        for(int i = 0; i < 4; i++) {
+//            turtleKC.render(kochCurve());
+//            translate(5, 0);
+//        }
+//
+//        translate(-500, 300);
+//
+//        for(int i = 0; i < 3; i++) {
+//            turtleKS.render(kochSnowflake());
+//            translate(80, 0);
+//        }
+//        translate(-20, 90);
+//        turtleKS.render(kochSnowflake());
+//
+//        translate(-50,650);
+//        for(int i = 0; i < 4; i++) {
+//            translate(0, -70);
+//            turtleST.render(serpTriangle());
+//        }
+//
+//        rotate(-90);
+//        translate(150, -200);
+//        for(int i = 0; i < 3; i++){
+//            turtleSL.render(stochasticImpl());
+//            translate(-60, 90);
+//        }
+//        translate(-70, 70);
+//        turtleSL.render(stochasticImpl());
 
         noLoop();
+    }
+
+    public void mousePressed(){
+        redraw();
     }
 
     public static void main(String[] args){
