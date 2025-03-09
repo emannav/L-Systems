@@ -1,5 +1,14 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 15 - March 9<sup>th</sup>
+After changing absolutely nothing in my code apart from writing it out in front of a friend, the Processing `redraw` function 
+worked flawlessly, triggered by `mousePressed` which also did not work previously. I feel like I can't progress with JavaFX 
+now. It feels like an insane drawback but if it works then it's a much more reasonable progression to stick to one library 
+instead of integrating three separate things that aren't commonly or easily used together. This may affect the timeline but 
+I'm behind anyway so I'll make up time where possible.<br>
+This is frustrating and I feel like all the time I've spent trying to make Processing work has been wasted because the very 
+first method I tried is now functional despite no change to the rest of the code. Keep calm and carry on, I suppose. 
+
 ### Entry 14 - Feb 28th<sup>th</sup>
 I've not had a very productive month in the context of this project. I'm going to begin shifting to JavaFX from now. I 
 plan to work on some base stochastic implementation before that, so I at least have something to show with the Processing 
