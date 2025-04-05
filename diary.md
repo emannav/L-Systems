@@ -1,5 +1,34 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 18 - April 5<sup>th</sup>
+I have been attempting to work with LazyGui, but it is not proving very effective. I attempted to begin with the most basic 
+code for it to get an idea of whether it would even be functional and it did. It worked for a simple output. I decided I 
+would begin slowly integrated parts of the actual graphical output from there but nothing I try is working with my code setup. 
+I have used the IntelliJ-specific examples given by KrabCode, the author of LazyGui, with no success. While the initial attempt 
+proved functional, I have seen no progress since. I have attempted multiple different ways of implementation, going so far as 
+to restructure part of my code, but I am stuck with a consistent error that keeps the code from running. At one point I got 
+it to create a window, but it would still not create a render, only a blank window. It is so late into the process to make 
+significant changes that I am hesitant to stop trying and move to yet another GUI framework. I will be back at step 1 again 
+no matter what framework I switch over to. I will keep trying for at least another day or two then reevaluate. I understand 
+that I shouldn't have taken such a risk so late into the timeline, and I am struggling a bit with what could have gone 
+differently if I had made different decisions, but I need to work on now with what I have.
+
+### Entry 17 - March 22<sup>nd</sup>
+I've been making additions to my report. I have not had a significant amount of time to work on the code due to multiple 
+coursework submissions being very close together. I have continued working on Overleaf for my report as it remains the 
+most convenient option for me. Additions to the report so far consist of the report-based deliverables discussing some 
+further classifications of L-Systems I found in a research paper from a Springer Archive book *Lindenmayer Systems: Impacts 
+on Theoretical Computer Science, Computer Graphics, and Developmental Biology*. The information is spread over a variety 
+of topics, so I have had to go back and forth between a couple papers to understand which classifications are truly distinct 
+and which ones overlap enough to disregard.
+
+### Entry 16 - March 15<sup>th</sup>
+I've been trying to produce a functional output as I want with G4P which is proving unsuccessful and not all the way 
+compatible with the version of Processing that I am using. Exploring options once again with LazyGui, another library 
+created for Processing. This one has more recent updates and appears to be compatible with Processing 4 and the readme 
+includes some reference to integrating it into IntelliJ which I'm hoping means that I can implement it without too much 
+trouble.
+
 ### Entry 15 - March 9<sup>th</sup>
 After changing absolutely nothing in my code apart from writing it out in front of a friend, the Processing `redraw` function 
 worked flawlessly, triggered by `mousePressed` which also did not work previously. I feel like I can't progress with JavaFX 
@@ -97,3 +126,4 @@ I have an outline of the project plan set. Looked into research I can site. Foun
 ](https://www.semanticscholar.org/paper/L-system-models-for-image-based-phenomics%3A-case-of-Cieslak-Khan/9c3a7ca6590928c8ec25f8246c1828d5311fa6f8) - specific plant mimics<br>
 [Interactive Evolution of L-System Grammars for Computer Graphics Modelling](https://users.monash.edu/~jonmc/research/Papers/L-systems-evol.pdf)<br>
 [Alvy Ray Smith Computer Graphics Papers](http://alvyray.com/Papers/PapersCG.htm) 
+
