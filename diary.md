@@ -1,5 +1,18 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 20 - April 9<sup>th</sup>
+I attempted to look at my problem a different way. I will be abandoning the LazyGui branch as I don't think there's anything 
+else I can do with it if the most basic output isn't working. During my initial research I had found the L-System examples 
+given on the Processing website, but I kept myself from using them as I had planned a slightly different approach, separating 
+drawing and rewriting functionalities between the Turtle and LSystem objects respectively. I decided to use the examples 
+provided on the website and spent all of yesterday implementing those on a separate branch to see if those would be functional 
+with my setup. They were not. I separated the files the way the examples had them separated; still to no avail. Using the 
+example code exactly as it is, creates a window with a background, but none of the actual drawing occurs. 
+
+### Entry 19 - April 7<sup>th</sup>
+Went back to refining my report. I worked on the software engineering portion since I appear to have reached a 
+standstill with my code and need a break before returning to it. 
+
 ### Entry 18 - April 5<sup>th</sup>
 I have been attempting to work with LazyGui, but it is not proving very effective. I attempted to begin with the most basic 
 code for it to get an idea of whether it would even be functional and it did. It worked for a simple output. I decided I 
