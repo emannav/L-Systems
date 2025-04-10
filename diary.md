@@ -1,5 +1,15 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 21 - April 10<sup>th</sup>
+I don't know how to approach the GUI issue anymore. I've worked on and implemented a stochastic L-system. With the current 
+setup not having a navigable interface, I will have to remove some of the fractal productions so that there is space on 
+the initial window to also hold the stochastic productions. Haven't figured out how exactly to set that up, but will work 
+on that next. I've been considering how to take and use keyboard inputs to maybe maneuver something GUI-adjacent with that 
+instead. It is clear that I am unlikely to have a properly traversable interface, but I can still try a basic input-output 
+concept.<br>
+For report reference - the probability consideration with selecting outputs came from [codingtechroom](https://codingtechroom.com/question/generate-weighted-random-numbers-java), 
+and the example used is already in the report theory (mention again in software engineering section?)
+
 ### Entry 20 - April 9<sup>th</sup>
 I attempted to look at my problem a different way. I will be abandoning the LazyGui branch as I don't think there's anything 
 else I can do with it if the most basic output isn't working. During my initial research I had found the L-System examples 
@@ -7,7 +17,10 @@ given on the Processing website, but I kept myself from using them as I had plan
 drawing and rewriting functionalities between the Turtle and LSystem objects respectively. I decided to use the examples 
 provided on the website and spent all of yesterday implementing those on a separate branch to see if those would be functional 
 with my setup. They were not. I separated the files the way the examples had them separated; still to no avail. Using the 
-example code exactly as it is, creates a window with a background, but none of the actual drawing occurs. 
+example code exactly as it is, creates a window with a background, but none of the actual drawing occurs. <br>
+For report reference - [pentigree](https://processing.org/examples/pentigree.html), [snowflake](https://processing.org/examples/penrosesnowflake.html), 
+and [penrose](https://processing.org/examples/penrosetile.html) L-systems, all by Geraldine Sarmiento. Copied word-for-word 
+to see if they worked and if so, to what extent.
 
 ### Entry 19 - April 7<sup>th</sup>
 Went back to refining my report. I worked on the software engineering portion since I appear to have reached a 
