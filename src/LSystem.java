@@ -12,6 +12,7 @@ public class LSystem {
     String sentence;
     List<Rule> ruleset;
     Boolean stochastic;
+    String first;
 
     /**
      * Constructor for class LSystem.
@@ -24,6 +25,7 @@ public class LSystem {
         this.sentence = axiom;
         this.ruleset = rules ;
         this.stochastic = stochastic;
+        first = axiom;
     }
 
     /**
@@ -165,6 +167,10 @@ public class LSystem {
         }
         // in case of rounding issues
         return strings.getLast();
+    }
+
+    public void reset(){
+        this.sentence = first;
     }
 
 }

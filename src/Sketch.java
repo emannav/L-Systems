@@ -98,6 +98,7 @@ public class Sketch extends PApplet {
             popMatrix();
             translate(100, 0);
         }
+        treeTwo.reset();
 
         // Adjust position before next construction to prevent any overlap
         translate(0, 725);
@@ -113,6 +114,7 @@ public class Sketch extends PApplet {
                 translate(-50, -60);
             }
         }
+        kochSnowflake.reset();
 
         translate(140, 205);
 
@@ -124,6 +126,7 @@ public class Sketch extends PApplet {
             popMatrix();
             translate(-90, 0);
         }
+        lTree.reset();
 
         translate(-120, 0);
 
@@ -135,6 +138,7 @@ public class Sketch extends PApplet {
             popMatrix();
             translate(-100, 0);
         }
+        basicStoch.reset();
 
         translate(360, 400);
 
@@ -146,8 +150,15 @@ public class Sketch extends PApplet {
             popMatrix();
             translate(-100, 0);
         }
+        basicComp.reset();
+
+        mousePressed();
 
         noLoop();
+    }
+
+    public void mousePressed(){
+        redraw();
     }
 
     public static void main(String[] args){
