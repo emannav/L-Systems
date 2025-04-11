@@ -46,8 +46,8 @@ public class Turtle {
             switch (c){
                 case 'F', 'G':
                     Sketch.processing.strokeWeight(2);
-                    Sketch.processing.line(0, 0, length, 0);
-                    Sketch.processing.translate(length, 0);
+                    Sketch.processing.line(0, 0, 0, length);
+                    Sketch.processing.translate(0, length);
                     break;
                 case '+':
                     // rotate right
