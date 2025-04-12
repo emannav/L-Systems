@@ -6,6 +6,9 @@
 public class Rule {
     char a;
     String b;
+    double c;
+
+
 
     /**
      * Constructor for class Rule
@@ -16,6 +19,19 @@ public class Rule {
     Rule(char a_, String b_){
         a = a_;
         b = b_;
+    }
+
+    /**
+     * Alternative constructor for stochastic l-systems
+     *
+     * @param a_ Letter
+     * @param b_ Rule corresponding to letter
+     * @param c_ Probability of outcome for this production
+     */
+    Rule(char a_, String b_, Double c_){
+        a = a_;
+        b = b_;
+        c = c_;
     }
 
     /**
@@ -34,5 +50,14 @@ public class Rule {
      */
     String getB(){
         return b;
+    }
+
+    /**
+     * Getter for probability
+     *
+     * @return outcome probability value
+     */
+    double getC(){
+        return c;
     }
 }

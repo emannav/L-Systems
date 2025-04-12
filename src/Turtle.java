@@ -19,6 +19,15 @@ public class Turtle {
     }
 
     /**
+     * Getter for degree of rotation.
+     *
+     * @return theta This is to calibrate the position of the graphics on the window
+     */
+    public float getTheta(){
+        return theta;
+    }
+
+    /**
      * Creates graphical output using basic turtle commands
      * <p>
      *     Note: All references to Sketch.processing are required as processing cannot be accessed in this class except
@@ -37,8 +46,8 @@ public class Turtle {
             switch (c){
                 case 'F', 'G':
                     Sketch.processing.strokeWeight(2);
-                    Sketch.processing.line(0, 0, length, 0);
-                    Sketch.processing.translate(length, 0);
+                    Sketch.processing.line(0, 0, 0, length);
+                    Sketch.processing.translate(0, length);
                     break;
                 case '+':
                     // rotate right
