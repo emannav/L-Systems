@@ -1,5 +1,20 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 22 - April 11<sup>th</sup>
+I went back to the website-given examples to debug a bit. Managed to figure out the issue, and it was a really minor code 
+change. The line colour is initialized in the setup() and I assumed that they would not have it mentioned again as that would 
+be redundant, but the whole time that I had switched the background colour and stroke colour (since the examples were white 
+stroke on black background and I wanted the opposite), they had reiterated the stroke colour in the second file. The program 
+was drawing white on white. Two days I spent trying to understand why it wasn't functioning. Also realized that I was having 
+so much issue with adjusting my productions on the window because I wasn't converting my angle calculations into radians. I 
+added a reset function to LSystem which redraws the entire setup I have exactly, so that the difference in stochastic productions 
+can be seen with every click. I did consider restructuring my work (again) so I could replicate the actively drawing visuals 
+that the website examples manage, but I don't know how compatible that is with my code. I'll consider it, but until then I 
+will be switching out the basicComp tree for a different stochastic system. That would give me more visibly different examples 
+to showcase. I did readjust my output window, so now I have one geometric fractal, two deterministic trees, and two stochastic 
+trees. I need to remove the tests that used `valid()`.<br>
+<b>For report reference</b> - added a `reset()` function, removed the `valid()` function. Thought process in written diary.
+
 ### Entry 21 - April 10<sup>th</sup>
 I don't know how to approach the GUI issue anymore. I've worked on and implemented a stochastic L-system. With the current 
 setup not having a navigable interface, I will have to remove some of the fractal productions so that there is space on 
@@ -7,7 +22,7 @@ the initial window to also hold the stochastic productions. Haven't figured out 
 on that next. I've been considering how to take and use keyboard inputs to maybe maneuver something GUI-adjacent with that 
 instead. It is clear that I am unlikely to have a properly traversable interface, but I can still try a basic input-output 
 concept.<br>
-For report reference - the probability consideration with selecting outputs came from [codingtechroom](https://codingtechroom.com/question/generate-weighted-random-numbers-java), 
+<b>For report reference</b> - the probability consideration with selecting outputs came from [codingtechroom](https://codingtechroom.com/question/generate-weighted-random-numbers-java), 
 and the example used is already in the report theory (mention again in software engineering section?)
 
 ### Entry 20 - April 9<sup>th</sup>
@@ -18,8 +33,7 @@ drawing and rewriting functionalities between the Turtle and LSystem objects res
 provided on the website and spent all of yesterday implementing those on a separate branch to see if those would be functional 
 with my setup. They were not. I separated the files the way the examples had them separated; still to no avail. Using the 
 example code exactly as it is, creates a window with a background, but none of the actual drawing occurs. <br>
-For report reference - [pentigree](https://processing.org/examples/pentigree.html), [snowflake](https://processing.org/examples/penrosesnowflake.html), 
-and [penrose](https://processing.org/examples/penrosetile.html) L-systems, all by Geraldine Sarmiento. Copied word-for-word 
+<b>For report reference</b> - [pentigree](https://processing.org/examples/pentigree.html), [snowflake](https://processing.org/examples/penrosesnowflake.html), and [penrose](https://processing.org/examples/penrosetile.html) L-systems, all by Geraldine Sarmiento. Copied word-for-word 
 to see if they worked and if so, to what extent.
 
 ### Entry 19 - April 7<sup>th</sup>
