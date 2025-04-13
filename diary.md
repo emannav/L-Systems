@@ -1,5 +1,14 @@
 # Lindenmayer Systems Project Diary
 
+### Entry 23 -  April 13<sup>th</sup>
+Changed the comparison stochastic tree to a different one, so there is evidence of two separate systems showcasing stochastic 
+rewriting. Shifting my focus to report work entirely until I can meet with my supervisor and discuss the GUI issue. I have 
+some papers that I want to integrate into my report - I've noted these in my written diary - and some restructuring is required. 
+I want to separate the research section from the implementation a bit more clearly. I am considered having some examples of 
+other classes of L-Systems as well, maybe n a different branch, so I can use the output in my report since I don't have space 
+on the overall output window. I will leave that for last, possibly until after everything else is completed and signed off 
+by the supe.
+
 ### Entry 22 - April 11<sup>th</sup>
 I went back to the website-given examples to debug a bit. Managed to figure out the issue, and it was a really minor code 
 change. The line colour is initialized in the setup() and I assumed that they would not have it mentioned again as that would 
