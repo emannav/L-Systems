@@ -96,6 +96,7 @@ public class Sketch extends PApplet {
         rotate(radians(180));
 
         // Second non-stochastic tree
+
         for (int i = 0; i < 4; i++){
             // pushMatrix() & popMatrix() save where the Turtle begins
             // allows for easier adjustment via translation after the construction is done
@@ -162,13 +163,17 @@ public class Sketch extends PApplet {
         }
         basicComp.reset();
 
-        mousePressed();
+        // Labels for all figures
+        rotate(radians(180));
+        textSize(20);
+        textAlign(CENTER);
+        fill(0);
+        text("Koch Snowflake", -450, -370);
+        text("D0L Trees", -200, 210);
+        text("Stochastic Trees", 360, -270);
 
-        noLoop();
-    }
-
-    public void mousePressed(){
-        redraw();
+        frameRate(0.8f);
+        loop();
     }
 
     public static void main(String[] args){
