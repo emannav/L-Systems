@@ -37,7 +37,7 @@ public class Sketch extends PApplet {
         processing = this;
 
         // Koch snowflake Turtle and LSystem initialization
-        this.turtleKS = new Turtle(6, radians(60));
+        this.turtleKS = new Turtle(4, radians(60));
         Rule ruleKS = new Rule('F', "F-F++F-F");
         List<Rule> rulesKS = new ArrayList<Rule>();
         rulesKS.add(ruleKS);
@@ -72,8 +72,15 @@ public class Sketch extends PApplet {
 
         // Second stochastic tree Turtle and LSystem initialization
         // Uses same rules and initial string as previous to show differences in productions
-        this.turtleComp = new Turtle(8, radians(30));
-        basicComp = new LSystem("F", rulesBS, true);
+        this.turtleComp = new Turtle(12, radians(22.5F));
+        List<Rule> rulesC = new ArrayList<>();
+        Rule ruleC1 = new Rule('F', "F[+F][-F]F", 0.5);
+        Rule ruleC2 = new Rule('F', "F[-F]F", 0.3);
+        Rule ruleC3 = new Rule('F', "F[+F]F", 0.2);
+        rulesC.add(ruleC1);
+        rulesC.add(ruleC2);
+        rulesC.add(ruleC3);
+        basicComp = new LSystem("F", rulesC, true);
     }
 
     /**
@@ -89,6 +96,7 @@ public class Sketch extends PApplet {
         rotate(radians(180));
 
         // Second non-stochastic tree
+
         for (int i = 0; i < 4; i++){
             // pushMatrix() & popMatrix() save where the Turtle begins
             // allows for easier adjustment via translation after the construction is done
@@ -109,14 +117,14 @@ public class Sketch extends PApplet {
             kochSnowflake.generate();
             turtleKS.render(kochSnowflake.getSentence());
             popMatrix();
-            translate(-(i * 110), -(i * 145));
+            translate(-(i * 90), -(i * 120));
             if(i == 0){
                 translate(-50, -60);
             }
         }
         kochSnowflake.reset();
 
-        translate(140, 205);
+        translate(50, 55);
 
         // Non-stochastic tree
         for(int i = 0; i < 3; i++){
@@ -131,6 +139,8 @@ public class Sketch extends PApplet {
         translate(-120, 0);
 
         // Stochastic tree
+        // First generate allows the system to start from a more progressed state
+        basicStoch.generate();
         for (int i = 0; i < 4; i++){
             pushMatrix();
             basicStoch.generate();
@@ -140,25 +150,30 @@ public class Sketch extends PApplet {
         }
         basicStoch.reset();
 
-        translate(360, 400);
+        translate(300, 350);
 
         // Comparison stochastic tree
+        basicComp.generate();
         for (int i = 0; i < 4; i++){
             pushMatrix();
             basicComp.generate();
             turtleComp.render(basicComp.getSentence());
             popMatrix();
-            translate(-100, 0);
+            translate(100, 0);
         }
         basicComp.reset();
 
-        mousePressed();
+        // Labels for all figures
+        rotate(radians(180));
+        textSize(20);
+        textAlign(CENTER);
+        fill(0);
+        text("Koch Snowflake", -450, -370);
+        text("D0L Trees", -200, 210);
+        text("Stochastic Trees", 360, -270);
 
-        noLoop();
-    }
-
-    public void mousePressed(){
-        redraw();
+        frameRate(0.8f);
+        loop();
     }
 
     public static void main(String[] args){
