@@ -74,7 +74,7 @@ public class LSystem {
                 }
             }
         }
-        this.sentence = nextgen.toString();
+        sentence = nextgen.toString();
     }
 
     /**
