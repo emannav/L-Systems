@@ -14,3 +14,10 @@ out/
 *.run.xml
 *.bcf
 *.blg
+
+### Processing ###
+.DS_Store
+applet
+application.windows32
+application.windows64
+out
